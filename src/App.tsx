@@ -216,7 +216,6 @@ const App = () => {
       liveCalls: "8 (group)",
       asyncReviews: "8",
       features: [
-        "Target pace: 3–5 meetings/week",
         "LinkedIn Profile OS 2.0 + Offer",
         "Messaging & Hooks",
         "List & Personal Notes",
@@ -238,7 +237,7 @@ const App = () => {
       asyncReviews: "16",
       popular: true,
       features: [
-        "Target pace: 5–7 meetings/week",
+        "Provides Highest Customization",
         "LinkedIn OS 2.0 (reviewed) + Offer",
         "Messaging + AI Outreach Agent",
         "Data with QC + AI Research Agent",
@@ -259,7 +258,7 @@ const App = () => {
       liveCalls: "—",
       asyncReviews: "—",
       features: [
-        "Target pace: 4–7 meetings/week per person",
+        "Provides Highest Customization",
         "Pod Profile OS + Offer roles",
         "Messaging guild + hooks",
         "Shared Data Factory + AI Research",
