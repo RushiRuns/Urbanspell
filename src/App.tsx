@@ -758,7 +758,7 @@ const App = () => {
                     </div>
                     {plan.installmentINR && (
                       <div className="text-sm text-gray-400">
-                        or {plan.installmentINR}
+                         {plan.installmentINR}
                       </div>
                     )}
                     {plan.installmentUSD && (
