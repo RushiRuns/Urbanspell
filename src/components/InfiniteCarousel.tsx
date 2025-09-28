@@ -42,7 +42,7 @@ const InfiniteCarousel: React.FC<InfiniteCarouselProps> = ({ screenshots }) => {
     >
       <div
         className={`flex gap-4 md:gap-6 animate-scroll ${isPaused ? 'animation-paused' : ''}`}
-        style={{ animationDuration: '30s' }}
+        style={{ animationDuration: '20s' }}
       >
         {duplicatedScreenshots.map((screenshot, index) => (
           <div key={index} className="flex-shrink-0 w-[calc(100%/1)] md:w-[calc(100%/3)] lg:w-[calc(100%/5)]">
