@@ -221,7 +221,7 @@ const App = () => {
     },
     {
       name: "Pro Plus",
-      tag: "Guided",
+      tag: "1:1",
       priceINR: "₹49,999",
       priceUSD: "$899–$1,200",
       installmentINR: "₹16,666 x 3",
@@ -243,7 +243,7 @@ const App = () => {
     },
     {
       name: "Team",
-      tag: "(3–6 seats)",
+      tag: "3 seats",
       priceINR: "₹84,999",
       priceUSD: "$400–$700",
       installmentINR: "+₹12k–₹20k x 2",
