@@ -239,7 +239,8 @@ const App = () => {
       features: [
         "Provides Highest Customization",
         "LinkedIn OS 2.0 (reviewed) + Offer",
-        "Messaging + AI Outreach Agent",
+        "Messaging",
+        "AI Outreach Agent",
         "Data with QC + AI Research Agent",
         "Two-Lane Cadence (full)",
         "AOHL v2 + Lead Magnet & Landing",
