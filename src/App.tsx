@@ -757,7 +757,7 @@ const App = () => {
                       {plan.priceUSD}
                     </div>
                     {plan.installmentINR && (
-                      <div className="text-sm text-gray-100 font-bold">
+                      <div className="text-sm text-gray-500 font-bold">
                          {plan.installmentINR}
                       </div>
                     )}
