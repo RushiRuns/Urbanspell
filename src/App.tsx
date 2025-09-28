@@ -98,11 +98,11 @@ const App = () => {
     },
     {
       src: "/downloads/Screenshot-5.png",
-      alt: "Client testimonial screenshot 4",
+      alt: "Client testimonial screenshot 5",
     },
     {
       src: "/downloads/Screenshot-6.png",
-      alt: "Client testimonial screenshot 4",
+      alt: "Client testimonial screenshot 6",
     },
   ];
 
