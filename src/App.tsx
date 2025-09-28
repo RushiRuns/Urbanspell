@@ -251,7 +251,7 @@ const App = () => {
       liveCalls: "—",
       asyncReviews: "—",
       features: [
-        "Target pace (per seat): 4–7 meetings/week",
+        "Target pace: 4–7 meetings/week per person",
         "Pod Profile OS + Offer roles",
         "Messaging guild + hooks",
         "Shared Data Factory + AI Research",
