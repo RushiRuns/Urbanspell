@@ -221,7 +221,7 @@ const App = () => {
     },
     {
       name: "Pro Plus",
-      tag: "1:1",
+      tag: "Guided",
       priceINR: "₹49,999",
       priceUSD: "$899–$1,200",
       installmentINR: "₹16,666 x 3",
@@ -243,7 +243,7 @@ const App = () => {
     },
     {
       name: "Team",
-      tag: "3 seats",
+      tag: "(3–6 seats)",
       priceINR: "₹84,999",
       priceUSD: "$400–$700",
       installmentINR: "+₹12k–₹20k x 2",
@@ -251,7 +251,7 @@ const App = () => {
       liveCalls: "—",
       asyncReviews: "—",
       features: [
-        "Target pace: 4–7 meetings/week per person",
+        "Target pace (per seat): 4–7 meetings/week",
         "Pod Profile OS + Offer roles",
         "Messaging guild + hooks",
         "Shared Data Factory + AI Research",
@@ -320,7 +320,7 @@ const App = () => {
             <div className="order-first md:order-last">
               <div className="relative">
                 <img
-                  src="/downloads/krishna.jpeg"
+                  src="/downloads/profile.jpeg"
                   alt="Business woman"
                   className="w-full max-w-md mx-auto h-[clamp(520px,72vh,840px)] object-contain object-top rounded-2xl shadow-2xl md:max-w-lg"
                   loading="lazy"
@@ -721,7 +721,7 @@ const App = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 animate-on-scroll opacity-0">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Pricing</h2>
-            
+            {/* Toggle */}
           </div>
         </div>
 
