@@ -203,7 +203,7 @@ const App = () => {
       tag: "Cohort",
       priceINR: "₹24,999",
       priceUSD: "$399",
-      installmentINR: "₹8,333 x 3",
+      installmentINR: "Target pace: 3–5 meetings/week",
       installmentUSD: "$133 x 3",
       liveCalls: "8 (group)",
       asyncReviews: "8",
