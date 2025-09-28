@@ -224,7 +224,7 @@ const App = () => {
       tag: "1:1",
       priceINR: "₹49,999",
       priceUSD: "$899–$1,200",
-      installmentINR: "₹16,666 x 3",
+      installmentINR: "Target pace: 5–7 meetings/week",
       installmentUSD: "$300–$400 x 3",
       liveCalls: "8 (1:1)",
       asyncReviews: "16",
