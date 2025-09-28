@@ -208,7 +208,7 @@ const App = () => {
   const pricingPlans = [
     {
       name: "Starter",
-      tag: "Cohort",
+      tag: "Cohort (Group Coaching)",
       priceINR: "₹24,999",
       priceUSD: "$399",
       installmentINR: "Target pace: 3–5 meetings/week",
