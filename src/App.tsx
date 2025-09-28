@@ -761,11 +761,7 @@ const App = () => {
                          {plan.installmentINR}
                       </div>
                     )}
-                    {plan.installmentUSD && (
-                      <div className="text-sm text-gray-400">
-                        or {plan.installmentUSD}
-                      </div>
-                    )}
+                    
                   </div>
                   <a
                     href={
