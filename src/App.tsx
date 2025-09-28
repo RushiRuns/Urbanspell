@@ -246,7 +246,7 @@ const App = () => {
       tag: "3 seats",
       priceINR: "₹84,999",
       priceUSD: "$400–$700",
-      installmentINR: "+₹12k–₹20k x 2",
+      installmentINR: "Target pace: 4–7 meetings/week per person",
       installmentUSD: "+$200–$350 x 2",
       liveCalls: "—",
       asyncReviews: "—",
