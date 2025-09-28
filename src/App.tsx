@@ -748,8 +748,25 @@ const App = () => {
                   </h3>
                   <div className="text-sm text-gray-500 mb-4">{plan.tag}</div>
 
-                  
 
+                  <div className="mb-6">
+                    <div className="text-4xl font-bold text-gray-900 mb-2">
+                      {plan.priceINR}
+                    </div>
+                    <div className="text-lg text-gray-500 mb-2">
+                      {plan.priceUSD}
+                    </div>
+                    {plan.installmentINR && (
+                      <div className="text-sm text-gray-400">
+                        or {plan.installmentINR}
+                      </div>
+                    )}
+                    {plan.installmentUSD && (
+                      <div className="text-sm text-gray-400">
+                        or {plan.installmentUSD}
+                      </div>
+                    )}
+                  </div>
                   <a
                     href={
                       plan.name === "Starter"
