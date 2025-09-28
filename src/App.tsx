@@ -320,7 +320,7 @@ const App = () => {
             <div className="order-first md:order-last">
               <div className="relative">
                 <img
-                  src="/downloads/profile.jpeg"
+                  src="/downloads/krishna.jpeg"
                   alt="Business woman"
                   className="w-full max-w-md mx-auto h-[clamp(520px,72vh,840px)] object-contain object-top rounded-2xl shadow-2xl md:max-w-lg"
                   loading="lazy"
