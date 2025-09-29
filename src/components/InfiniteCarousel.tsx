@@ -193,7 +193,6 @@ const InfiniteCarousel: React.FC<InfiniteCarouselProps> = ({ screenshots }) => {
               key={index} 
               className="carousel-slide flex-shrink-0 w-[calc(100%/1)] md:w-[calc(100%/3)] lg:w-[calc(100%/5)]"
             >
-              <div className="relative w-full h-80 rounded-lg overflow-hidden shadow-lg bg-gray-50 flex items-center justify-center">
                 {screenshot.href ? (
                   <a 
                     href={screenshot.href} 
