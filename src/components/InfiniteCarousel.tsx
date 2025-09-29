@@ -20,7 +20,6 @@ const InfiniteCarousel: React.FC<InfiniteCarouselProps> = ({ screenshots }) => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const [isAutoplayPaused, setIsAutoplayPaused] = useState(false);
   const [slideWidth, setSlideWidth] = useState(0);
-  const [imageAspectRatios, setImageAspectRatios] = useState<boolean[]>([]);
 
   // Duplicate screenshots for infinite scroll
   const duplicatedScreenshots = [...screenshots, ...screenshots];
@@ -37,19 +36,6 @@ const InfiniteCarousel: React.FC<InfiniteCarouselProps> = ({ screenshots }) => {
     const marginRight = parseFloat(computedStyle.marginRight) || 0;
     
     setSlideWidth(slideRect.width + marginRight);
-  }, []);
-
-  // Handle image load to detect aspect ratio
-  const handleImageLoad = useCallback((index: number, img: HTMLImageElement) => {
-    const naturalAspectRatio = img.naturalWidth / img.naturalHeight;
-    const targetAspectRatio = 9 / 16; // 0.5625
-    const isOffRatio = Math.abs(naturalAspectRatio - targetAspectRatio) > 0.05;
-    
-    setImageAspectRatios(prev => {
-      const newRatios = [...prev];
-      newRatios[index] = isOffRatio;
-      return newRatios;
-    });
   }, []);
 
   // Navigation functions
@@ -202,15 +188,12 @@ const InfiniteCarousel: React.FC<InfiniteCarouselProps> = ({ screenshots }) => {
         }}
       >
         {duplicatedScreenshots.map((screenshot, index) => {
-          const originalIndex = index % screenshots.length;
-          const isOffRatio = imageAspectRatios[originalIndex];
-          
           return (
             <div 
               key={index} 
               className="carousel-slide flex-shrink-0 w-[calc(100%/1)] md:w-[calc(100%/3)] lg:w-[calc(100%/5)]"
             >
-              <div className={`relative w-full pt-[177.77%] rounded-lg overflow-hidden shadow-lg ${isOffRatio ? 'bg-gray-100' : ''}`}>
+              <div className="relative w-full h-80 rounded-lg overflow-hidden shadow-lg bg-gray-50 flex items-center justify-center">
                 {screenshot.href ? (
                   <a 
                     href={screenshot.href} 
@@ -221,16 +204,14 @@ const InfiniteCarousel: React.FC<InfiniteCarouselProps> = ({ screenshots }) => {
                     <img
                       src={screenshot.src}
                       alt={screenshot.alt}
-                      className={`w-full h-full ${isOffRatio ? 'object-contain' : 'object-cover'}`}
-                      onLoad={(e) => handleImageLoad(originalIndex, e.currentTarget)}
+                      className="w-full h-full object-contain"
                     />
                   </a>
                 ) : (
                   <img
                     src={screenshot.src}
                     alt={screenshot.alt}
-                    className={`absolute inset-0 w-full h-full ${isOffRatio ? 'object-contain' : 'object-cover'}`}
-                    onLoad={(e) => handleImageLoad(originalIndex, e.currentTarget)}
+                    className="absolute inset-0 w-full h-full object-contain"
                   />
                 )}
               </div>
