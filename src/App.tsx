@@ -104,6 +104,18 @@ const App = () => {
       src: "/downloads/Screenshot-6.png",
       alt: "Client testimonial screenshot 6",
     },
+    {
+      src: "/downloads/Screenshot-7.png",
+      alt: "Client testimonial screenshot 7",
+    },
+    {
+      src: "/downloads/Screenshot-8.png",
+      alt: "Client testimonial screenshot 8",
+    },
+    {
+      src: "/downloads/Screenshot-9.png",
+      alt: "Client testimonial screenshot 9",
+    },
   ];
 
   // Auto-play carousel for screenshots
